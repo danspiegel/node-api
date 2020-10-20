@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const requireDir = require('require-dir');
 require('dotenv').config();
-require('./config/database')(process.env.DB_HOST);
+require('./config/database')('mongodb://localhost:27017/nodeapi');
 
 const app = express();
 
